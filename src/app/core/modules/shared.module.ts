@@ -13,6 +13,7 @@ import { FuseMatSidenavHelperService } from '../directives/fuse-mat-sidenav-help
 import { FusePipesModule } from '../pipes/pipes.module';
 import { FuseConfirmDialogComponent } from '../components/confirm-dialog/confirm-dialog.component';
 import { FuseCountdownComponent } from '../components/countdown/countdown.component';
+import { FuseThemeOptionsComponent } from '../components/theme-options/theme-options.component';
 import { FuseMatchMedia } from '../services/match-media.service';
 import { FuseHljsComponent } from '../components/hljs/hljs.component';
 import { FusePerfectScrollbarDirective } from '../directives/fuse-perfect-scrollbar/fuse-perfect-scrollbar.directive';
@@ -31,7 +32,8 @@ import { TranslateModule } from '@ngx-translate/core';
         FuseHljsComponent,
         FuseIfOnDomDirective,
         FusePerfectScrollbarDirective,
-        FuseMaterialColorPickerComponent
+        FuseMaterialColorPickerComponent,
+        FuseThemeOptionsComponent
     ],
     imports        : [
         FlexLayoutModule,

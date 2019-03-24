@@ -36,7 +36,7 @@ app.use(function(req, res, next){
 
 socket(io);
 
-app.use('/', (req,res)=>{
+app.get('/', (req,res)=>{
   res.send('home route hit');
 });
 app.use('/api', apiRoutes);

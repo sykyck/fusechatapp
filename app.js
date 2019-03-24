@@ -36,6 +36,9 @@ app.use(function(req, res, next){
 
 socket(io);
 
+app.use('/', (req,res)=>{
+  res.send('home route hit');
+});
 app.use('/api', apiRoutes);
 app.use('/chat/*', express.static(path.join(__dirname, 'dist')));
 

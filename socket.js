@@ -19,7 +19,7 @@ module.exports = function (io) {
             name: nickname,
             avatar  : 'assets/images/avatars/profile.jpg',
             status  : 'online',
-            mood    : 'Using UsArcades ...',
+            mood    : 'Using Vaibhav App ...',
             // TODO: fetch from db
             chatList: []
         };

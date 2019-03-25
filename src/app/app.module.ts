@@ -15,7 +15,6 @@ import { FuseMainModule } from './main/main.module';
 import { FuseFakeDbService } from './fuse-fake-db/fuse-fake-db.service';
 import { FuseChatModule } from './main/content/apps/chat/chat.module';
 import { FuseMaintenanceComponent } from './main/content/logout/maintenance.component';
-import { MaintenanceModule } from './main/content/logout/maintenence.module';
 import { FuseChatComponent } from './main/content/apps/chat/chat.component';
 
 const appRoutes: Routes = [
@@ -31,7 +30,8 @@ const appRoutes: Routes = [
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
+        FuseMaintenanceComponent
     ],
     imports     : [
         BrowserModule,
@@ -45,7 +45,6 @@ const appRoutes: Routes = [
         }),
         FuseMainModule,
         FuseChatModule,
-        MaintenanceModule,
         RouterModule.forRoot(appRoutes)
     ],
     providers   : [
